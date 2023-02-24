@@ -1,0 +1,98 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-input-container {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 70%;
+  align-items: center;
+  padding: 30px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  max-width: 300px;
+  min-height: 250px;
+}
+
+.comment {
+  margin-top: 20px;
+  min-width: 50%;
+  height: 120px;
+}
+.name {
+  height: 30px;
+}
+
+.desc {
+  font-size: 25px;
+}
+
+.button {
+  align-self: flex-start;
+  margin-top: 20px;
+  background-color: #0284c7;
+  height: 40px;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 7px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.horizontal-line {
+  width: 80%;
+  height: 1px;
+  color: #dee0e3;
+}
+
+.count {
+  background-color: #0284c7;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.display-comments-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 100%;
+}
+
+.comments-container {
+  min-width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .comment-input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .comments-image {
+    max-width: 250px;
+    order: -1;
+  }
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .display-comments-list {
+    max-width: 300px;
+  }
+  .comments-container {
+    max-width: 300px;
+  }
+}
